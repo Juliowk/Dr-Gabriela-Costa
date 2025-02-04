@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import HeaderComponentMobile from "./components/Header/mobile";
 import HeaderComponentDesktop from "./components/Header/desktop";
+import HomeComponentDesktop from "./components/Home/desktop";
+import HomeComponentMobile from "./components/Home/mobile";
 
 function App() {
   const [isMobileScreenn, setIsMobileScreenn] = useState(
@@ -21,7 +23,17 @@ function App() {
 
   return (
     <>
-      {isMobileScreenn ? <HeaderComponentMobile /> : <HeaderComponentDesktop />}
+      {isMobileScreenn ? (
+        <>
+          <HeaderComponentMobile />
+          <HomeComponentMobile />
+        </>
+      ) : (
+        <>
+          <HeaderComponentDesktop />
+          <HomeComponentDesktop />
+        </>
+      )}
     </>
   );
 }
