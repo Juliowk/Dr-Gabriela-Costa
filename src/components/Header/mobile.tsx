@@ -1,6 +1,24 @@
+import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 const HeaderComponentMobile = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <Navbar bg="light" data-bs-theme="light">
@@ -15,7 +33,11 @@ const HeaderComponentMobile = () => {
           </Navbar.Brand>
         </Container>
       </Navbar>
-      <Navbar bg="light" data-bs-theme="light">
+      <Navbar
+        bg="light"
+        data-bs-theme="light"
+        className={isSticky ? "fixed-top" : ""}
+      >
         <Container className="justify-content-center">
           <Nav>
             <Nav.Item>
