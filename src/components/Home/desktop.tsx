@@ -10,7 +10,7 @@ const HomeComponentDesktop = () => {
           <Col className="ms-5 p-2 d-flex justify-content-center align-items-center">
             <div className="jumbotron">
               <h1 className="display-4">Quem é Dr Gabrila Costa?</h1>
-              <p className="lead">
+              <p className="lead fs-6">
                 A Dra. Gabriela Costa é uma profissional dedicada à saúde bucal,
                 proporcionando atendimento humanizado e de qualidade para seus
                 pacientes. Com experiência e conhecimento nas mais modernas
