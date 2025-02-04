@@ -26,8 +26,7 @@ const HeaderComponentMobile = () => {
           <Navbar.Brand>
             <img
               src="icon.svg"
-              height={50}
-              className="d-inline-block align-top"
+              height={"60px"}
               alt="Icon logo"
             />
           </Navbar.Brand>
