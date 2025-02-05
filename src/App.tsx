@@ -5,6 +5,8 @@ import HomeComponentDesktop from "./components/Home/desktop";
 import HomeComponentMobile from "./components/Home/mobile";
 import ContactComponentMobile from "./components/Contact/mobile";
 import ContactComponentDesktop from "./components/Contact/desktop";
+import ServicesComponentDesktop from "./components/services/desktop";
+import ServicesComponentMobile from "./components/services/mobile";
 
 function App() {
   const [isMobileScreenn, setIsMobileScreenn] = useState(
@@ -30,12 +32,14 @@ function App() {
           <HeaderComponentMobile />
           <HomeComponentMobile />
           <ContactComponentMobile />
+          <ServicesComponentMobile />
         </>
       ) : (
         <>
           <HeaderComponentDesktop />
           <HomeComponentDesktop />
           <ContactComponentDesktop />
+          <ServicesComponentDesktop />
         </>
       )}
     </>

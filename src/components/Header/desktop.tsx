@@ -16,8 +16,8 @@ const HeaderComponentDesktop = () => {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#contact">Contato</Nav.Link>
-            <Nav.Link>Endereço</Nav.Link>
-            <Nav.Link>Serviços</Nav.Link>
+            <Nav.Link href="#contact">Endereço</Nav.Link>
+            <Nav.Link href="#services">Serviços</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
