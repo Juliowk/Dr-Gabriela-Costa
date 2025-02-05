@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const ServicesComponentMobile = () => {
   return (
-    <Container className="mt-5">
+    <Container className="mt-5" id="services">
       <Carousel className="custom-carousel carousel-dark" controls={false}>
         <Carousel.Item>
           <Card className="mb-5">

@@ -45,7 +45,7 @@ const HeaderComponentMobile = () => {
               <Nav.Link href="#contact">Endereço</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>Serviços</Nav.Link>
+              <Nav.Link href="#services">Serviços</Nav.Link>
             </Nav.Item>
           </Nav>
         </Container>
