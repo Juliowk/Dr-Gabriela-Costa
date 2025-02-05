@@ -5,7 +5,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 const ContactComponentDesktop = () => {
   return (
     <>
-      <Container fluid className="mt-5 bg-light">
+      <Container fluid className="mt-5 bg-light" id="contact">
         <Row>
           <Col className="d-flex justify-content-center">
             <img src="contact-us-animate.svg" />

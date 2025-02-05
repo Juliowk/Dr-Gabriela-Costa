@@ -6,7 +6,7 @@ const HeaderComponentMobile = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 91) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -21,14 +21,10 @@ const HeaderComponentMobile = () => {
   }, []);
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light">
+      <Navbar bg="light" data-bs-theme="light" id="home">
         <Container className="justify-content-center">
           <Navbar.Brand>
-            <img
-              src="icon.svg"
-              height={"60px"}
-              alt="Icon logo"
-            />
+            <img src="icon.svg" height={"60px"} alt="Icon logo" />
           </Navbar.Brand>
         </Container>
       </Navbar>
@@ -40,13 +36,13 @@ const HeaderComponentMobile = () => {
         <Container className="justify-content-center">
           <Nav>
             <Nav.Item>
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link href="#home">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>Contato</Nav.Link>
+              <Nav.Link href="#contact">Contato</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link>Endereço</Nav.Link>
+              <Nav.Link href="#contact">Endereço</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>Serviços</Nav.Link>

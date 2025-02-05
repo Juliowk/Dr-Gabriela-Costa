@@ -5,7 +5,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 const ContactComponentMobile = () => {
   return (
     <>
-      <Container className="mt-3 py-3 bg-light">
+      <Container className="mt-3 py-3 bg-light" id="contact">
         <div className="jumbotron">
           <h1 className="display-6">Sorria com confiança! 😁✨</h1>
           <p className="lead fs-6">
