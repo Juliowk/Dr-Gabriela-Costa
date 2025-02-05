@@ -1,6 +1,5 @@
 import { Container, Image, Row } from "react-bootstrap";
 import { FaInstagram } from "react-icons/fa";
-import { HiBars2 } from "react-icons/hi2";
 
 const HomeComponentMobile = () => {
   return (
@@ -32,9 +31,6 @@ const HomeComponentMobile = () => {
             <FaInstagram size={30} /> @dra.gabrielacostas
           </a>
         </p>
-      </Row>
-      <Row className="mt-4">
-        <HiBars2 />
       </Row>
     </Container>
   );

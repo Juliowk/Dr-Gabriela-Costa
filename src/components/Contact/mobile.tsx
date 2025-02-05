@@ -1,12 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { BsFillGeoAltFill } from "react-icons/bs";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { HiBars2 } from "react-icons/hi2";
 
 const ContactComponentMobile = () => {
   return (
     <>
-      <Container className="mt-5 py-3 bg-light">
+      <Container className="mt-3 py-3 bg-light">
         <div className="jumbotron">
           <h1 className="display-6">Sorria com confiança! 😁✨</h1>
           <p className="lead fs-6">
@@ -43,9 +42,6 @@ const ContactComponentMobile = () => {
             </Col>
           </Row>
         </div>
-      </Container>
-      <Container className="mt-5 mb-5 d-flex justify-content-center">
-        <HiBars2 />
       </Container>
     </>
   );

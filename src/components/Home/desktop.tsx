@@ -1,6 +1,5 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { FaInstagram } from "react-icons/fa";
-import { HiBars2 } from "react-icons/hi2";
 
 const HomeComponentDesktop = () => {
   return (
@@ -46,9 +45,6 @@ const HomeComponentDesktop = () => {
               style={{ width: "600px", objectFit: "cover" }}
             />
           </Col>
-        </Row>
-        <Row className="mt-5">
-          <HiBars2/>
         </Row>
       </Container>
     </>
