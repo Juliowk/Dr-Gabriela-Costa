@@ -33,7 +33,7 @@ const HomeComponentMobile = () => {
           </a>
         </p>
       </Row>
-      <Row>
+      <Row className="mt-4">
         <HiBars2 />
       </Row>
     </Container>
